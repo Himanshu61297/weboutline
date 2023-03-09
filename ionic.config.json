@@ -1,0 +1,7 @@
+{
+  "name": "weboutline",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

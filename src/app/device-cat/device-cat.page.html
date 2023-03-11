@@ -1,0 +1,43 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="container">
+          <div class="form-container">
+            <h2>Add Device Category</h2>
+            <form id="deviceForm">
+              <div class="form-group">
+                <label for="categoryName">Category Name:</label><br>
+                <input type="text" id="categoryName" name="categoryName">
+              </div>
+              <div class="form-group">
+                <label for="categoryDescription">Category Description:</label><br>
+                <input type="text" id="categoryDescription" name="categoryDescription">
+              </div>
+              <button type="submit" id="submitBtn">Add Category</button>
+            </form>
+          </div>
+          <div class="list-container">
+            <h2>Device Categories</h2>
+            <table id="deviceTable">
+              <thead>
+                <tr>
+                  <th>Category Name</th>
+                  <th>Category Description</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

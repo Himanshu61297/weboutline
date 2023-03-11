@@ -1,0 +1,56 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="container">
+          <div class="form-container">
+            <h1>Add Site</h1>
+            <form id="site-form">
+              <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div>
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city" required />
+              </div>
+              <div>
+                <label for="region">Region:</label><br>
+                <input type="text" id="region" name="region" required />
+              </div>
+              <div>
+                <label for="pincode">Pin Code:</label><br>
+                <input type="text" id="pincode" name="pincode" required />
+              </div>
+              <button type="submit">Add Site</button>
+            </form>
+          </div>
+
+          <div class="table-container">
+            <h2>Sites</h2>
+            <div class="search-container">
+              <input type="text" placeholder="Search" id="search-input" />
+              <button type="button" id="search-btn">Search</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>City</th>
+                  <th>Region</th>
+                  <th>Pin Code</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="site-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,65 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="container">
+          <div class="form-container">
+            <h1>Add Site</h1>
+            <form id="site-form">
+              <div>
+                <label for="Name">Name:</label><br>
+                <input type="text" id="Name" name="Name" required />
+              </div>
+              <div>
+                <label for="Code">Code:</label><br>
+                <input type="text" id="Code" name="Code" required />
+              </div>
+              <div>
+                <label for="MAC">MAC:</label><br>
+                <input type="text" id="MAC" name="MAC" required />
+              </div>
+              <div>
+                <label for="IMEI">IMEI:</label><br>
+                <input type="text" id="IMEI" name="IMEI" required />
+              </div>
+              <div>
+                <label for="Site">Site:</label><br>
+                <input type="text" id="Site" name="Site" required />
+              </div>
+              <div>
+                <label for="Gateway">Gateway Type:</label><br>
+                <input typ="text" id="Gateway" name="Gateway" required />
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+          <div class="table-container">
+            <h2>Device List</h2>
+            <div class="search-container">
+              <input type="text" placeholder="Search" id="search-input" />
+              <button type="button" id="search-btn">Search</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Gateway</th>
+                  <th>Site</th>
+                  <th>MAC/IMEI</th>
+                  <th>Created On</th>
+                  <th>Signal Strength</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="site-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,72 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="container">
+          <div class="form-container">
+            <h1>Add Site</h1>
+            <form id="site-form">
+              <div>
+                <label for="type">Device Type:</label><br>
+                <input type="text" id="type" name="type" required />
+              </div>
+              <div>
+                <label for="Gateway">Gateway:</label><br>
+                <input type="text" id="Gateway" name="Gateway" required />
+              </div>
+              <div>
+                <label for="nodeId">Node-Id:</label><br>
+                <input type="text" id="nodeId" name="nodeId" required />
+              </div>
+              <div>
+                <label for="cat">Device Category:</label><br>
+                <input type="text" id="cat" name="cat" required />
+              </div>
+              <div>
+                <label for="Name">Name:</label><br>
+                <input type="text" id="Name" name="Name" required />
+              </div>
+              <div>
+                <label for="Location">Location:</label><br>
+                <input typ="text" id="Location" name="Location" required />
+              </div>
+              <div>
+                <label for="Schedule">Schedule:</label><br>
+                <input type="button" id="Schedule" name="Schedule" required />
+              </div>
+              <div>
+                <label for="Model">Brand Model:</label><br>
+                <input type="text" id="Model" name="Model" required />
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+          <div class="table-container">
+            <h2>Device List</h2>
+            <div class="search-container">
+              <input type="text" placeholder="Search" id="search-input" />
+              <button type="button" id="search-btn">Search</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>City</th>
+                  <th>Region</th>
+                  <th>Pin Code</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="site-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
